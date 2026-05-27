@@ -10,8 +10,7 @@ Practice problems for mastering **1D Arrays** in C++.
 |---|---------|------------|------------|
 | 1 | [Find Most Frequent Number](./Problems.md#-1-find-most-frequent-number) | Medium | Frequency counting 
 | 2 | [Smallest Pair](./Problems.md#-2-smallest-pair) | Easy | Minimum pair evaluation |
-| 3 | Palindrome Array | Easy | Two pointers |
-| 4 | Find Minimum 3 Values | Medium | Tracking minimum values |
+| 3 | [Digits Frequency](./) | Medium |Digits frequency counting |
 
 ---
 
@@ -124,73 +123,27 @@ Best pair:
 
 ---
 
-# 🔹 3. Palindrome Array
+# 🔹 3. Digits Frequency
 
 ## 🎯 Goal
 
-Determine whether the array reads the same forward and backward.
+Given `N` integers, count how many times each digit from `0` to `9` appears.
 
 ---
 
-## 💡 Example 1
-
-### Input
+## 📌 Constraints
 
 ```text
-5
-1 2 3 2 1
-```
-
-### Output
-
-```text
-YES
+1 <= N <= 200
 ```
 
 ---
 
-## 💡 Example 2
+## ⚠️ Notes
 
-### Input
-
-```text
-4
-1 2 3 4
-```
-
-### Output
-
-```text
-NO
-```
-
----
-
-## 🧠 Explanation
-
-The array:
-
-```text
-1 2 3 2 1
-```
-
-is identical when reversed.
-
----
-
-# 🔹 4. Find Minimum 3 Values
-
-## 🎯 Goal
-
-Find the smallest three numbers in ascending order.
-
----
-
-## ⚠️ Requirements
-
-- Do NOT sort the entire array.
-- Do NOT modify the original array.
-- Traverse the array only once.
+- Count digits inside all numbers.
+- Digits may appear multiple times.
+- Print the frequency for every digit from `0` to `9`.
 
 ---
 
@@ -199,34 +152,43 @@ Find the smallest three numbers in ascending order.
 ### Input
 
 ```text
-6
-9 2 7 1 5 3
+2
+78 307
 ```
 
 ### Output
 
 ```text
-1 2 3
+0 1
+1 0
+2 0
+3 1
+4 0
+5 0
+6 0
+7 2
+8 1
+9 0
 ```
 
 ---
 
 ## 🧠 Explanation
 
-The smallest three values are:
+Digits found:
 
 ```text
-1 2 3
+7 → appears 2 times
+8 → appears 1 time
+3 → appears 1 time
+0 → appears 1 time
 ```
 
-even though the original array is not sorted.
+All other digits appear `0` times.
 
 ---
-
 # 🚀 Topics Covered
 
-- Frequency Arrays
-- Array Traversal
-- Two Pointers
-- Minimum Tracking
-- Basic Optimization
+- Find Most Frequent Number
+- Smallest Pair
+- Digits Frequency

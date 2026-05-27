@@ -12,7 +12,7 @@ int main() {
         int value;
         cin >> value;
 
-        value += 500;   // shift all values to positive
+        value += 500;   // shift all values to positive..
         frequency[value]++;
     }
 

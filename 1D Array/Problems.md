@@ -123,7 +123,7 @@ Best pair:
 
 ---
 
-# 🔹 3. Digits Frequency
+# 🔹 [3. Digits Frequency](./Digits_Frequency.cpp)
 
 ## 🎯 Goal
 
